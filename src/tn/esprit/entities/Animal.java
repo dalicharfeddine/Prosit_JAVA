@@ -1,6 +1,6 @@
 package tn.esprit.entities;
 
-public sealed class Animal permits Aquatic , Terrestrial{
+public sealed class Animal permits Aquatic, Terrestrial {
 
     private String family, name;
     private int age;
@@ -8,7 +8,6 @@ public sealed class Animal permits Aquatic , Terrestrial{
 
 
     public Animal() {
-
     }
 
     public Animal(String family, String name, int age, boolean isMammal) {
@@ -54,13 +53,9 @@ public sealed class Animal permits Aquatic , Terrestrial{
         isMammal = mammal;
     }
 
+
     @Override
     public String toString() {
-        return "tn.esprit.gestionzoo.entities.Animal{" +
-                "family='" + family + '\'' +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", isMammal=" + isMammal +
-                '}';
+        return "Animal{ Family:" + family + ", Name: " + name + ", Age: " + age + ", isMammal: " + isMammal + "}";
     }
 }

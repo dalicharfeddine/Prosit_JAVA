@@ -1,8 +1,8 @@
 package tn.esprit.entities;
 
-public  class Dolphin extends Aquatic {
-    private float swimmingSpeed ;
+public class Dolphin extends Aquatic {
 
+    private float swimmingSpeed;
 
     public Dolphin() {
     }
@@ -12,15 +12,21 @@ public  class Dolphin extends Aquatic {
         this.swimmingSpeed = swimmingSpeed;
     }
 
+    public float getSwimmingSpeed() {
+        return swimmingSpeed;
+    }
+
+    public void setSwimmingSpeed(float swimmingSpeed) {
+        this.swimmingSpeed = swimmingSpeed;
+    }
+
     @Override
     public void swim() {
-            System.out.println("This dolphin is swimming.");
+        System.out.println("This dolphin is swimming.");
     }
 
     @Override
     public String toString() {
-        return "Dolphin{" +
-                "swimmingSpeed=" + swimmingSpeed +
-                '}';
+        return super.toString() + ", swimmingSpeed:" + swimmingSpeed;
     }
 }
